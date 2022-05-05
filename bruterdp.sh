@@ -15,8 +15,8 @@ cat << "INFO"
   ''.'MMM'  .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM       MMMM
    MMC      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.      'MMMM
   .MM      :MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM''MMM       MMMMM
-  MMM      :M  'MMMMMMMMMMM Brute SMB MMMMMMMM'.MM  MM:M.    'MMMMM
- .MMM   ...:M: :M.'MMMMMMMMMMMMMMMMMMMMMMMMM'.M''   MM:MMMMMMMMMMMM'
+  MMM      :M  'MMMMMMMMMMM Brute RDP MMMMMMMM'.MM  MM:M.    'MMMMM
+ .MMM   ...:M: :M.'MM hackingyseguridad.com M'.M''   MM:MMMMMMMMMMMM'
 AMMM..MMMMM:M.    :M.'MMMMMMMMMMMMMMMMMMMM'.MM'     MM''''''''''''
 MMMMMMMMMMM:MM     'M'.M'MMMMMMMMMMMMMM'.MC'M'     .MM
  '''''''''':MM.       'MM!M.'M-M-M-M'M.'MM'        MMM
@@ -33,8 +33,8 @@ MMMMMMMMMMM:MM     'M'.M'MMMMMMMMMMMMMM'.MC'M'     .MM
 INFO
 if [ -z "$1" ]; then
         echo
-        echo "Fuerza bruta con diccionarios a SMB."
-        echo "Requiere nmap"
+        echo "Fuerza bruta con diccionarios a RDP."
+        echo "Requiere hydra"
         echo "Uso.: sh bruterdp.sh <ip>"
         echo
         exit 0
