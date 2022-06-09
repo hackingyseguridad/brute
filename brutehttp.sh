@@ -42,4 +42,4 @@ if [ -z "$1" ]; then
 fi
 echo
 echo
-nmap $1 -p 80 --script http-brute --script-args userdb=usuarios.txt,passdb=claves.txt,unpwdb.timelimit=0
+nmap $1 -p 80 --script http-brute --script-args http-brute.path=/ userdb=usuarios.txt,passdb=claves.txt,unpwdb.timelimit=0
