@@ -42,4 +42,4 @@ if [ -z "$1" ]; then
 fi
 echo
 echo
-hydra -L usuarios.txt -P claves.txt -s 80 -f $1 http-get /
+hydra -L usuarios.txt -P claves.txt -s 80 -f $1 http-get / S:200 
