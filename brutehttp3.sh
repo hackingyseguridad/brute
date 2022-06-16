@@ -43,4 +43,5 @@ fi
 echo
 echo "hay que incluir en eñ script  argumentos como p.ej.: –script-args http-brute.path=/admin/ "
 echo
-nmap $1 -Pn -sTVC -p 80,443 --script http-brute -script-args userdb=usuarios.txt,passdb=claves.txt,unpwdb.timelimit=0 --script http-brute  -script-args http-brute.path=/cache/backup/ 
+nmap -Pn $1 -p 80,443 --script http-brute -script-args userdb=usuarios.txt,passdb=claves.txt,unpwdb.timelimit=0,http-brute.path=/
+
