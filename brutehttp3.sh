@@ -41,5 +41,5 @@ if [ -z "$1" ]; then
         exit 0
 fi
 echo
-echo
-nmap $1 -p 80 --script http-brute --script-args http-brute.path=/ userdb=usuarios.txt,passdb=claves.txt,unpwdb.timelimit=0
+echo "hay que añador al script  argumentos como p.ej.: –script-args http-brute.path=/admin/ "
+nmap $1 -p 80,443 --script http-brute --script-args http-brute.path=/ userdb=usuarios.txt,passdb=claves.txt,unpwdb.timelimit=0
