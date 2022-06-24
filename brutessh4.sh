@@ -41,4 +41,4 @@ if [ -z "$1" ]; then
 fi
 echo
 echo
-medusa -f -h $1 -U usuarios.txt -P claves.txt -M ssh
+medusa -f -h $1 -U usuarios.txt -P claves.txt -M ssh -n 22
