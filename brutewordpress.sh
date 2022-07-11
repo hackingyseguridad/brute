@@ -40,5 +40,5 @@ if [ -z "$1" ]; then
 fi
 echo
 echo
-nmap -Pn $1 -p 80,443 --script=http-wordpress-brute  --script-args 'userdb=ususarios.txt,passdb=claves.txt,http-wordpress-brute.hostname=domain.com,
+nmap -Pn $1 -p 80,443 --script=http-wordpress-brute  --script-args 'userdb=usuarios.txt,passdb=claves.txt,http-wordpress-brute.hostname=domain.com,
 http-wordpress-brute.threads=3,brute.firstonly=true' 
