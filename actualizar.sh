@@ -9,6 +9,9 @@ echo ".."
 wget https://raw.githubusercontent.com/hackingyseguridad/diccionarios/master/usuarios.txt -q -O usuarios.txt
 echo "usuarios.txt"
 echo ".."
+wget https://raw.githubusercontent.com/hackingyseguridad/diccionarios/master/usuarios0.txt -q -O usuarios0.txt
+echo "usuarios0.txt"
+echo ".."
 wget https://raw.githubusercontent.com/hackingyseguridad/diccionarios/master/claves.txt -q -O claves.txt
 echo "claves.txt"
 echo ".."
