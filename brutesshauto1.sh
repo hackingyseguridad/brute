@@ -1,4 +1,5 @@
 #!/bin/bash
+# (c) Hacking y Seguridad .com 2022
 # Fuerza bruta SSH, de listado de IPs desde fichero ip.txt
 
 for i in `cat ip.txt`
