@@ -42,5 +42,5 @@ if [ -z "$1" ]; then
 fi
 echo
 echo
-nmap -Pn $1 -sS -sV --script auth 
-nmap -Pn $1 -p 21 --script ftp-brute --script-args userdb=usuarios.txt,passdb=claves.txt,unpwdb.timelimit=0 -oG resultado.txt
+nmap -Pn $1 $2 -sS -sV --script auth 
+nmap -Pn $1 $2 -p 21 --script ftp-brute --script-args userdb=usuarios.txt,passdb=claves.txt,unpwdb.timelimit=0 -oG resultado.txt
