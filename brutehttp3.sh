@@ -34,14 +34,15 @@ MMMMMMMMMMM:MM     'M'.M'MMMMMMMMMMMMMM'.MC'M'     .MM
 INFO
 if [ -z "$1" ]; then
         echo
-        echo "Fuerza bruta con diccionarios a HTTP en puerto por defecto 80/TCP."
+        echo "Fuerza bruta con diccionarios a HTTP Auth Basic en puertos por defecto 80/TCP 443/tcp."
         echo "Requiere nmap"
-        echo "Uso.: sh brutehttp.sh <ip>"
+        echo "Debemos especificar el path de la carpeta "
+        echo "Uso.: sh brutehttp3.sh <ip>"
         echo
         exit 0
 fi
 echo
 echo "hay que incluir en eñ script  argumentos como p.ej.: –script-args http-brute.path=/admin/ "
 echo
-nmap -Pn $1 -p 80,443 --script http-brute -script-args userdb=usuarios.txt,passdb=claves.txt,unpwdb.timelimit=0,http-brute.path=/
+nmap -Pn -sVC $1 $2 -p 80,443 --script http-brute -script-args userdb=usuarios.txt,passdb=claves.txt,unpwdb.timelimit=0,http-brute.path=/
 
