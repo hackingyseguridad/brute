@@ -42,4 +42,4 @@ if [ -z "$1" ]; then
 fi
 echo
 echo
-nmap -Pn $1 -p 514,513 --script rlogin-brute --script-args userdb=usuarios0.txt,passdb=claves0.txt,unpwdb.timelimit=0 -oG resultado.txt
+nmap -Pn $1 -p 513,514 --script rlogin-brute --script-args userdb=usuarios0.txt,passdb=claves0.txt,unpwdb.timelimit=0 -oG resultado.txt
