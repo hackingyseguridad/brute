@@ -43,4 +43,4 @@ if [ -z "$1" ]; then
 fi
 echo
 echo
-hydra $1 ftp -s 21 -L usuarios.txt -P claves.txt -f -t 3
+hydra $1 ftp -s 21 -L usuarios.txt -P claves.txt -f -e nsr -w 20 -t 3
