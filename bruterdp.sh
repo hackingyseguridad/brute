@@ -41,5 +41,5 @@ if [ -z "$1" ]; then
 fi
 echo
 echo
-hydra -L usuarios.txt -P claves.txt -vV $1 rdp -e nsr -w 20 
+hydra -L usuarios.txt -P claves.txt -vV $1 rdp -e nsr -w 20 -t 3
 
