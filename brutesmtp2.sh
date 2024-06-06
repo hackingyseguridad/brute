@@ -1,4 +1,5 @@
 echo 
+echo "patator smtp_login  host=1.1.1.1 user="antonio" password="Password01"
 echo
 echo "smtp sin autenticacion"
 patator smtp_login host=$1
