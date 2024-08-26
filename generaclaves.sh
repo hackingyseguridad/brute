@@ -2,7 +2,7 @@
 # (c) Hacking y Seguridad .com 2024
 # Generacdor de claves ccombinando dos ficheros
 
-
+crunch 2 2 -f /usr/share/crunch/charset.lst mixalpha-numeric -o combinaciones.txt
 
 for i in `cat claves.txt`
 do
