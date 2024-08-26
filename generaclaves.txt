@@ -1,0 +1,14 @@
+#!/bin/bash
+# (c) Hacking y Seguridad .com 2024
+# Generacdor de claves ccombinando dos ficheros
+
+
+
+for i in `cat claves.txt`
+do
+for h  in `cat combinaciones.txt`
+do
+       echo $i$h
+done
+done
+
