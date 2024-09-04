@@ -42,4 +42,4 @@ if [ -z "$1" ]; then
 fi
 echo
 echo
-nmap -Pn $1 -p 25,587,465,2525 --script smtp-brute  --script-args userdb=usuarios.txt,passdb=claves.txt,unpwdb.timelimit=0
+nmap -Pn $1 $2 -p 25,587,465,2525 --script smtp-brute  --script-args userdb=usuarios.txt,passdb=claves.txt,unpwdb.timelimit=0 $3 $4
