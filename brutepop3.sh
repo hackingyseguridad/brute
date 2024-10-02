@@ -42,5 +42,5 @@ if [ -z "$1" ]; then
 fi
 echo
 echo
-nmap -Pn $1 -p 110 --script pop3-brute --script-args userdb=usuarios0.txt,passdb=claves0.txt,unpwdb.timelimit=0
-hydra -L usuarios0.txt -P claves0.txt -f $1 pop3 -V
+nmap -Pn $1 $2 $3 -p 110 --script pop3-brute --script-args userdb=usuarios0.txt,passdb=claves0.txt,unpwdb.timelimit=0
+
