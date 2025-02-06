@@ -1,5 +1,6 @@
 ### Fuera brura inversa o password spraying,  
-consiste en probar una misma password o unas pocas passord, para una lista grande de usuarios, de manera que  cuando volvamos a probar otra passwd, sobre un usuario haya pasado el tiempo de bloqueo o tiempo del contador de reintentos.
+
+consiste en probar una misma password o unas pocas passord, para una lista grande de usuarios, de manera que  cuando volvamos a probar otra password, sobre un usuario haya pasado el tiempo de bloqueo o tiempo reset del contador de reintentos!!
 
 Usuario1:Password00
 
