@@ -19,11 +19,11 @@ Usuario6:Password00
 
 para eso hay que tener en cuenta en la configuración en Windows Server o LDAP, estos tres parametros que  forman parte de las políticas de bloqueo de cuentas para protegerse contra ataques de fuerza bruta. Aquí está su función explicada brevemente:
 
-Account lockout threshold: 50 intentos fallidos
+### Account lockout threshold: 50 intentos fallidos
 
-Reset lockout counter after: 15 minutos
+### Reset lockout counter after: 15 minutos
 
-Account lockout duration: 30 minutos
+### Account lockout duration: 30 minutos
 
 
 1. Account lockout threshold: 50 intentos fallidos
