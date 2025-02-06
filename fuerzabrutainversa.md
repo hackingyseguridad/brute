@@ -25,30 +25,24 @@ Usuario6:Password00
 #### Account lockout duration: 30 minutos
 
 1. Account lockout threshold: 50 intentos fallidos
-Qué hace:
 
 Define cuántos intentos fallidos de contraseña se permiten antes de bloquear la cuenta.
-Para qué sirve:
 
 Evita que un atacante pruebe infinitas contraseñas (fuerza bruta).
 
 Ejemplo: Si un usuario o atacante falla 10 veces seguidas, la cuenta se bloquea.
 
 2. Reset lockout counter after: 15 minutos
-Qué hace:
 
 Establece el tiempo que debe pasar sin intentos fallidos para que el contador de intentos se reinicie a cero.
-Para qué sirve:
 
 Permite que los usuarios legítimos recuperen acceso si cometieron errores temporales.
 
 Ejemplo: Si un usuario falla 5 veces, pero espera 15 minutos sin intentar ingresar, el contador vuelve a 0.
 
 3. Account lockout duration: 30 minutos
-Qué hace:
 
 Determina cuánto tiempo permanece bloqueada la cuenta tras superar el límite de intentos fallidos.
-Para qué sirve:
 
 Ralentiza los ataques automatizados al forzar una pausa.
 
@@ -73,6 +67,7 @@ Estos valores suelen ajustarse según el entorno:
 Entornos críticos: Threshold bajo (5-10), duración larga (1h+).
 
 Entornos flexibles: Threshold alto (15-20), duración corta (15-30 min).
+
 
 http://www.hackingyseguridad.com/
 
