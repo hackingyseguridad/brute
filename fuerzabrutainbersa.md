@@ -73,3 +73,7 @@ Estos valores suelen ajustarse según el entorno:
 Entornos críticos: Threshold bajo (5-10), duración larga (1h+).
 
 Entornos flexibles: Threshold alto (15-20), duración corta (15-30 min).
+
+http://www.hackingyseguridad.com/
+
+
