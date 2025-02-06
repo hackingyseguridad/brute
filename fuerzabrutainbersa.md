@@ -1,4 +1,4 @@
-### Fuera brura inversa o password spraying,  
+## Fuera brura inversa o password spraying,  
 
 consiste en probar una misma password o unas pocas passwoord, para una lista grande de usuarios, de manera que  cuando volvamos a probar otra nueva password sobre un usuario haya pasado el tiempo de bloqueo o tiempo reset del contador de reintentos !!
 
@@ -17,7 +17,7 @@ Usuario6:Password00
 ...
 
 
-para eso hay que tener en cuenta en la configuración en Windows Server o LDAP, estos tres parametros que  forman parte de las políticas de bloqueo de cuentas para protegerse contra ataques de fuerza bruta. Aquí está su función explicada brevemente:
+- para eso hay que tener en cuenta en la configuración en Windows Server o LDAP, estos tres parametros que  forman parte de las políticas de bloqueo de cuentas para protegerse contra ataques de fuerza bruta. Aquí está su función explicada brevemente:
 
 ### Account lockout threshold: 50 intentos fallidos
 
