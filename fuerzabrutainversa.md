@@ -49,20 +49,14 @@ Ralentiza los ataques automatizados al forzar una pausa.
 Ejemplo: Si una cuenta se bloquea, el usuario/atacante no podrá intentar de nuevo hasta que pasen 30 minutos (o hasta que un administrador la desbloquee).
 
 Relación entre ellas (ejemplo práctico):
-Un atacante prueba 10 contraseñas incorrectas → bloqueo automático (threshold).
+
+Un atacante prueba 50 contraseñas incorrectas → bloqueo automático (threshold).
 
 Si el atacante espera 15 minutos sin intentos, el contador se reinicia → puede volver a intentar.
 
 Si la cuenta se bloquea, estará inaccesible durante 30 minutos (duración del bloqueo).
 
-Importancia del equilibrio:
-⚠️ Threshold muy bajo (ej: 3 intentos): Bloqueos frecuentes por errores legítimos (typos).
-
-⚠️ Reset muy largo (ej: 60 min): Mayor riesgo de denegación de servicio (DoS) por ataques intencionales de bloqueo.
-
-⚠️ Duración muy larga (ej: 24h): Inconveniencia para usuarios legítimos.
-
-Estos valores suelen ajustarse según el entorno:
+configurar según el entorno:
 
 Entornos críticos: Threshold bajo (5-10), duración larga (1h+).
 
