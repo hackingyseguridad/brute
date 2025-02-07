@@ -1,5 +1,19 @@
 ## Fuera brura inversa o password spraying,  
 
+Posibles escenarios de elementos que autentican :
+
+1º.- Activo --------------------------LDAP
+
+2º.- Activo ---- LDAP ---//relay//----LDAP
+
+3º.- Activo ---- BBDD ----------------LDAP 
+
+4º.- Activo ---- // ------------------DC Windows active directory
+
+5º.- Activo ---- // ------------------DC Windows active directory
+
+6º.- Activo -----//---- DC AD---------DC Windows active directory
+
 consiste en probar una misma password o unas pocas passwoord, para una lista grande de usuarios, de manera que  cuando volvamos a probar otra nueva password sobre un usuario haya pasado el tiempo de bloqueo o tiempo reset del contador de reintentos !!
 
 Usuario1:Password00
