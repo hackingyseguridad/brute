@@ -14,7 +14,7 @@ Posibles escenarios de elementos que autentican :
 
 6º.- Activo -----//---- DC AD---------DC Windows active directory
 
-Fuerza bruta intersa o password spraying: consiste en probar una misma password o unas pocas passwoord, para una lista grande de usuarios, de manera que  cuando volvamos a probar otra nueva password sobre un usuario haya pasado el tiempo de bloqueo o tiempo reset del contador de reintentos !!
+Fuerza bruta intersa o password spraying; consiste en probar una misma password o unas pocas passwoord, para una lista grande de usuarios, de manera que  cuando volvamos a probar otra nueva password sobre un usuario haya pasado el tiempo de bloqueo o tiempo reset del contador de reintentos !!
 
 Usuario1:Password00
 
