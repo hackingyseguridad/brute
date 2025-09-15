@@ -40,4 +40,4 @@ if [ -z "$1" ]; then
 fi
 echo
 echo
-nmap -p5060,5061 --script sip-brute --script-args userdb=usuarios0.txt,passdb=claves0.txt $1 -vvvv
+nmap -Pn -p5061 --script sip-brute --script-args userdb=usuarios0.txt,passdb=claves0.txt $1 -vvvv
