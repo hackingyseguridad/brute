@@ -1,8 +1,9 @@
 
-## brute
+### brute
 
-### Subrutinas para ataques de fuerza bruta a distintos servicios
+Subrutinas para ataques de fuerza bruta a distintos servicios
 
+#
 
 Diccionarios
 
