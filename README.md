@@ -4,9 +4,9 @@
 ### Subrutinas para ataques de fuerza bruta a distintos servicios
 
 
-## Diccionarios
+Diccionarios
 
-### https://github.com/hackingyseguridad/diccionarios 
+https://github.com/hackingyseguridad/diccionarios/
 
 
 
