@@ -43,3 +43,6 @@ fi
 echo
 echo
 nmap $1 -p 3306 --script mysql-brute --script-args userdb=usuarios.txt,passdb=claves.txt,unpwdb.timelimit=0
+echo
+echo "mysql -h $1 -u root -p "
+echo
