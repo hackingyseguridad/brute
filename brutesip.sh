@@ -39,5 +39,7 @@ if [ -z "$1" ]; then
         exit 0
 fi
 echo
-echo
+echo 
+# deteccion: nmap -Pn -sS -sU -p 5060 --script sip-methods -O IP
 nmap -Pn -p5060,5061 -sS -sU -O --script sip-brute --script-args userdb=usuarios0.txt,passdb=claves0.txt $1 -vvvv
+echo
