@@ -55,5 +55,5 @@ echo
 # sipscan 192.168.1.0/24
 
 # Ataque con diccionarios 
-nmap -Pn -p5060,5061 -sS -sU -O --script sip-brute --script-args userdb=usuarios0.txt,passdb=claves0.txt $1 -vvvv
+nmap -Pn -p5060,5061 -sS -sU -sV -O --script sip-brute --script-args userdb=usuarios0.txt,passdb=claves0.txt $1 -vvvv
 echo
