@@ -1,4 +1,4 @@
-## Fuera brura inversa o password spraying,  
+## Fuera bruta inversa o password spraying,  
 
 Posibles escenarios de elementos que autentican :
 
