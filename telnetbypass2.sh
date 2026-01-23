@@ -1,6 +1,6 @@
 #!/bin/sh
-# Script educativo para probar conexiones telnet
-# NO es un exploit real - solo prueba conexiones básicas
+# Script  para probar conexiones telnet
+# hackingyseguridad.com
 
 HOST="${1}"
 PORT="${2:-23}"
