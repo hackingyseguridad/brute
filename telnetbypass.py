@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-CVE-2026-24061 - GNU inetutils-telnetd Remote Authentication Bypass
+CVE-2026-24061 - GNU inetutils-telnetd Remote authentication bypass
 CVSS 9.8 - Shell como root, sin autenticar
 Uso:
     ./cve_2026_24061_telnetd.py <target> [port] [user]
