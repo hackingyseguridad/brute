@@ -9,6 +9,19 @@ Este repositorio reúne herramientas, ejemplos y recursos relacionados con técn
 
 El objetivo principal es comprender cómo funcionan este tipo de ataques, analizar sus riesgos y mejorar la defensa de sistemas, aplicaciones y credenciales frente a accesos no autorizados.
 
+El repositorio incluye:
+
+🔹 Scripts de fuerza bruta para distintos protocolos y servicios.
+
+🔹 Herramientas de automatización para pruebas de autenticación.
+
+🔹 Diccionarios y wordlists para ataques por diccionario.
+
+🔹 Utilidades auxiliares para generación, modificación y optimización de listas de contraseñas.
+
+🔹 Ejemplos prácticos para comprender el funcionamiento de los ataques.
+
+🔹 Documentación y guías de uso para facilitar la ejecución y el aprendizaje.
 
 #
 
