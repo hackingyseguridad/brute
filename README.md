@@ -11,17 +11,17 @@ El objetivo principal es comprender cómo funcionan este tipo de ataques, analiz
 
 El repositorio incluye:
 
-🔹 Scripts de fuerza bruta para distintos protocolos y servicios.
+- Scripts de fuerza bruta para distintos protocolos y servicios.
+  
+- Herramientas de automatización para pruebas de autenticación.
 
-🔹 Herramientas de automatización para pruebas de autenticación.
+- Diccionarios y wordlists para ataques por diccionario.
 
-🔹 Diccionarios y wordlists para ataques por diccionario.
+- Utilidades auxiliares para generación, modificación y optimización de listas de contraseñas.
 
-🔹 Utilidades auxiliares para generación, modificación y optimización de listas de contraseñas.
+- Ejemplos prácticos para comprender el funcionamiento de los ataques.
 
-🔹 Ejemplos prácticos para comprender el funcionamiento de los ataques.
-
-🔹 Documentación y guías de uso para facilitar la ejecución y el aprendizaje.
+- Documentación y guías de uso para facilitar la ejecución y el aprendizaje.
 
 #
 
