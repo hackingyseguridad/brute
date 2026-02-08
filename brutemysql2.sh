@@ -16,7 +16,7 @@ echo
 echo
 
 hydra -L usuarios0.txt -P claves0.txt $1 mysql
-
+hydra -l sa -P usuarios.txt $1 mssql
 echo
 echo "mysql -h $1 -u root -p "
 echo
