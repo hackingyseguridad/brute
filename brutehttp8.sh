@@ -1,6 +1,6 @@
 # Script basico para fuerza bruta http con hydra en  WordPress version 6.9
 # Uso.: sh brutehttp8.sh fqdn
-# POST http-get-form  GET http-post-form 
+# POST http-get-form  (o http-post-form si es sin SSL)  para GET http-post-form 
 # WordPress 6.9 y todas las versiones modernas de WordPress, utiliza el método POST en el formulario de login de wp-login.php.
 # @antonio_taboada
 
