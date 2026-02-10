@@ -23,6 +23,8 @@ echo ".."
 wget https://raw.githubusercontent.com/hackingyseguridad/diccionarios/master/claves0.txt -q -O claves0.txt  --inet4-only
 wc -l claves0.txt
 echo ".."
+wget https://github.com/RykerWilder/rockyou.txt/blob/main/rockyou.txt.zip --inet4-only
+echo ".."
 echo "..."
 echo "...."
 echo "..... fin!"
