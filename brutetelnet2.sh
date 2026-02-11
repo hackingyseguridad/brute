@@ -42,4 +42,4 @@ if [ -z "$1" ]; then
 fi
 echo
 echo
-nmap $1 -p 23 --script telnet-brute --script-args userdb=usuarios.txt,passdb=claves.txt,unpwdb.timelimit=0
+nmap $1 $2 -p 23 --script telnet-brute --script-args userdb=usuarios.txt,passdb=claves.txt,unpwdb.timelimit=0
