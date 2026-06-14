@@ -465,17 +465,19 @@ Remediación recomendada (para informe)
 ControlImplementaciónBloqueo por intentos fallidosfail2ban, account lockout policyMFA / 2FATOTP, hardware tokenContraseñas robustasMínimo 12 caracteres, complejidad altaCambio de credenciales por defectoObligatorio en instalaciónRestricción de acceso por IPFirewall / ACL a servicios críticosMonitorizaciónSIEM, alertas en intentos múltiples fallidosDeshabilitar servicios innecesariosTelnet → SSH, FTP → SFTP
 
 
-Referencias
-
+Referencias:
 
 Repositorio principal: https://github.com/hackingyseguridad/brute
+
 Diccionarios: https://github.com/hackingyseguridad/diccionarios
+
 Referencia: http://www.hackingyseguridad.com
+
 OWASP Testing Guide — OTG-AUTHN-003 (Testing for Weak Lock Out Mechanism)
+
 CWE-307: Improper Restriction of Excessive Authentication Attempts
+
 CWE-521: Weak Password Requirements
-
-
 
 
 
