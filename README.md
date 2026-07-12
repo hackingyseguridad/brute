@@ -1,4 +1,4 @@
-### 🔓 Brute — Subrutinas de Fuerza Bruta para Auditorías de Autenticación
+### Brute — Subrutinas de Fuerza Bruta para Auditorías de Autenticación
 
 ![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)
 ![Shell](https://img.shields.io/badge/shell-bash-green.svg)
