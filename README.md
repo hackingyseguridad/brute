@@ -1,4 +1,4 @@
-# 🔓 Brute — Subrutinas de Fuerza Bruta para Auditorías de Autenticación
+### 🔓 Brute — Subrutinas de Fuerza Bruta para Auditorías de Autenticación
 
 ![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)
 ![Shell](https://img.shields.io/badge/shell-bash-green.svg)
@@ -16,11 +16,9 @@
 
 Colección de **subrutinas de fuerza bruta** (Bash, Python y Batch) para probar la robustez de la autenticación en más de **20 protocolos y servicios distintos**: SSH, FTP, RDP, SMB, bases de datos, correo, VoIP, VPN, WordPress, y más.
 
-> 📌 Proyecto mantenido por [hackingyseguridad.com](http://www.hackingyseguridad.com/)
-
 ---
 
-## 📑 Tabla de contenidos
+### Tabla de contenidos
 
 - [¿Qué es un ataque de fuerza bruta?](#-qué-es-un-ataque-de-fuerza-bruta)
 - [¿Qué incluye este repositorio?](#-qué-incluye-este-repositorio)
@@ -38,7 +36,7 @@ Colección de **subrutinas de fuerza bruta** (Bash, Python y Batch) para probar 
 
 ---
 
-## 🧩 ¿Qué es un ataque de fuerza bruta?
+### ataque de fuerza bruta
 
 Un **ataque de fuerza bruta** (*brute force*) consiste en probar de forma sistemática miles o millones de combinaciones de usuario y/o contraseña contra un servicio de autenticación hasta dar con una credencial válida. Es especialmente efectivo cuando:
 
@@ -58,20 +56,20 @@ Este repositorio documenta ambas técnicas — ver [`fuerzabrutadirecta.md`](fue
 
 ---
 
-## 📦 ¿Qué incluye este repositorio?
+###  Fierza bruta
 
 | Categoría | Contenido |
 |---|---|
-| 🖥️ Scripts de fuerza bruta | Más de 50 scripts dirigidos a distintos protocolos y servicios |
-| 🔁 Automatización | Scripts de ataque masivo/automático (SSH masivo, escaneo por rangos, etc.) |
-| 📚 Diccionarios | Enlace al repositorio externo de wordlists ([diccionarios](https://github.com/hackingyseguridad/diccionarios/)) |
-| 🛠️ Utilidades | Generación y gestión de listas de claves, codificación Base64, instalación de dependencias |
-| 📖 Documentación | Explicación conceptual de fuerza bruta directa e inversa |
-| 🪟 Soporte multiplataforma | Versiones `.sh` (Linux) y `.bat` (Windows) para algunos scripts |
+|  Scripts de fuerza bruta | Más de 50 scripts dirigidos a distintos protocolos y servicios |
+|  Automatización | Scripts de ataque masivo/automático (SSH masivo, escaneo por rangos, etc.) |
+|  Diccionarios | Enlace al repositorio externo de wordlists ([diccionarios](https://github.com/hackingyseguridad/diccionarios/)) |
+|  Utilidades | Generación y gestión de listas de claves, codificación Base64, instalación de dependencias |
+|  Documentación | Explicación conceptual de fuerza bruta directa e inversa |
+|  Soporte multiplataforma | Versiones `.sh` (Linux) y `.bat` (Windows) para algunos scripts |
 
 ---
 
-## ⚙️ Requisitos
+### Requisitos
 
 - Sistema Linux/Unix (recomendado Kali, Parrot OS o similar) — algunos scripts tienen variante `.bat` para Windows
 - `bash`
@@ -82,7 +80,7 @@ Este repositorio documenta ambas técnicas — ver [`fuerzabrutadirecta.md`](fue
 
 ---
 
-## 🚀 Instalación
+###  Instalación
 
 ```bash
 git clone https://github.com/hackingyseguridad/brute.git
@@ -100,7 +98,7 @@ actualizar.bat         # Windows
 
 ---
 
-## ▶️ Uso rápido
+### Uso rápido
 
 ```bash
 # Fuerza bruta contra un servicio SSH
@@ -120,9 +118,9 @@ actualizar.bat         # Windows
 
 ---
 
-## 📚 Catálogo de scripts por protocolo
+### scripts por protocolo
 
-### 🔐 SSH (Secure Shell)
+###  SSH (Secure Shell)
 
 | Script | Descripción |
 |---|---|
@@ -132,14 +130,14 @@ actualizar.bat         # Windows
 | `brutesshauto.sh` / `brutesshauto1.sh` | Automatización del ataque contra uno o varios objetivos |
 | `brutesshmasivo.sh` | Ataque masivo contra un rango/listado de IPs |
 
-### 📁 FTP (File Transfer Protocol)
+###  FTP (File Transfer Protocol)
 
 | Script | Descripción |
 |---|---|
 | `bruteftp.sh` | Ataque de fuerza bruta estándar contra FTP |
 | `bruteftp2.sh` / `bruteftp3.sh` / `bruteftp4.sh` | Variantes del ataque (distintos métodos de conexión/autenticación) |
 
-### 🌐 HTTP / Web
+###  HTTP / Web
 
 | Script | Descripción |
 |---|---|
@@ -148,14 +146,14 @@ actualizar.bat         # Windows
 | `authbasic.sh` | Ataque específico contra autenticación HTTP Basic |
 | `brutewordpress.sh` | Fuerza bruta dirigida al panel de login de WordPress |
 
-### 🖥️ RDP (Remote Desktop Protocol)
+###  RDP (Remote Desktop Protocol)
 
 | Script | Descripción |
 |---|---|
 | `bruterdp.sh` | Ataque de fuerza bruta contra RDP |
 | `bruterdp2.sh` | Variante del ataque RDP |
 
-### 🗄️ Bases de datos
+###  Bases de datos
 
 | Script | Servicio |
 |---|---|
@@ -163,7 +161,7 @@ actualizar.bat         # Windows
 | `brutems-sql.sh` | Microsoft SQL Server |
 | `brutepostgresql.sh` | PostgreSQL |
 
-### 📧 Correo electrónico
+###  Correo electrónico
 
 | Script | Protocolo |
 |---|---|
@@ -171,14 +169,14 @@ actualizar.bat         # Windows
 | `brutepop3.sh` / `brutepop3b.sh` | POP3 |
 | `brutesmtp.sh` / `brutesmtp2.sh` | SMTP |
 
-### 📞 Telefonía / VoIP y VPN
+###  Telefonía / VoIP y VPN
 
 | Script | Protocolo |
 |---|---|
 | `brutesip.sh` | SIP (VoIP) |
 | `bruteike.sh` | IKE (negociación IPsec / VPN) |
 
-### 🗂️ Compartición de archivos y administración remota
+### Compartición de archivos y administración remota
 
 | Script | Protocolo |
 |---|---|
@@ -187,7 +185,7 @@ actualizar.bat         # Windows
 | `brutersh.sh` | RSH (Remote Shell) |
 | `brutevnc.sh` | VNC (escritorio remoto) |
 
-### ⌨️ Telnet
+### Telnet
 
 | Script | Descripción |
 |---|---|
@@ -197,7 +195,7 @@ actualizar.bat         # Windows
 
 ---
 
-## 🛠️ Utilidades auxiliares
+### Utilidades
 
 | Script | Función |
 |---|---|
@@ -209,7 +207,7 @@ actualizar.bat         # Windows
 
 ---
 
-## 📖 Documentación conceptual
+### Documentación 
 
 | Documento | Contenido |
 |---|---|
@@ -218,7 +216,7 @@ actualizar.bat         # Windows
 
 ---
 
-## 📖 Diccionarios / wordlists
+### Diccionarios / wordlists
 
 Los diccionarios de usuarios y contraseñas utilizados por los scripts se mantienen en un repositorio independiente:
 
@@ -226,9 +224,9 @@ Los diccionarios de usuarios y contraseñas utilizados por los scripts se mantie
 
 ---
 
-## 🛡️ Buenas prácticas de defensa
+### Recomendaciones
 
-Si administras alguno de los servicios cubiertos por este repositorio, algunas medidas recomendadas para mitigar ataques de fuerza bruta son:
+algunas medidas recomendadas para mitigar ataques de fuerza bruta son:
 
 | Medida | Efecto |
 |---|---|
